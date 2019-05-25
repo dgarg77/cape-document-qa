@@ -8,13 +8,18 @@ mock==2.0.0
 numpy==1.15.0
 # We require >=0.18 to support the "expanding" function
 # latest version 0.23 will give an error, so we keep 0.22
-pandas=0.22
+## 0.22 version is giving error to Dinesh Garg so changed it to 0.23
+pandas==0.23
 pytest==3.6.4
 requests==2.18.1
 retry==0.9.2
 scikit-learn==0.19.1
 scipy==0.19.1
+# Originally it was written as tensorflow==1.7.0 but 
+# Dinesh Garg changed it to tensorflow==1.8 because 1.7.0 was giving an error
 tensorflow==1.7.0
+# The following command was finally issued from command line to make it work
+# pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.7.0-py3-none-any.whl
 
 
 
